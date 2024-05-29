@@ -1,48 +1,281 @@
-(module TP4056-Module (layer F.Cu) (tedit 628F6E8A)
-  (fp_text reference REF** (at 0 1.2954) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text value TP4056-Module (at 0 -0.5) (layer F.Fab)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_line (start 3.81 14) (end 8.5 14) (layer F.SilkS) (width 0.12))
-  (fp_line (start -3.81 14.9225) (end 3.7465 14.9225) (layer F.SilkS) (width 0.12))
-  (fp_line (start 3.7465 14.9225) (end 3.7465 12.5095) (layer F.SilkS) (width 0.12))
-  (fp_line (start -3.81 14.9225) (end -3.81 12.5095) (layer F.SilkS) (width 0.12))
-  (fp_line (start 8.5 -14) (end -8.5 -14) (layer F.SilkS) (width 0.12))
-  (fp_line (start 8.5 14) (end 8.5 -14) (layer F.SilkS) (width 0.12))
-  (fp_line (start -8.5 14) (end -3.81 14) (layer F.SilkS) (width 0.12))
-  (fp_line (start -8.5 -14) (end -8.5 14) (layer F.SilkS) (width 0.12))
-  (fp_text user CHG+ (at -5.7912 10.1981) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text user CHG- (at 6.2611 10.1981) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text user Out+ (at -7.0612 -7.9375 90) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text user B+ (at -3.8227 -8.7376 90) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text user B- (at 3.7846 -8.7376 90) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text user OUT- (at 6.9723 -7.8105 90) (layer F.SilkS)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (fp_text user "Micro USB" (at -0.1905 12.7635) (layer F.SilkS)
-    (effects (font (size 0.7 0.7) (thickness 0.1)))
-  )
-  (pad 1 thru_hole circle (at -6.9977 11.8872) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
-  (pad 2 thru_hole circle (at 6.9977 11.8872) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
-  (pad 3 thru_hole circle (at -6.9977 -10.8712) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
-  (pad 5 thru_hole circle (at -3.8227 -10.8712) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
-  (pad 6 thru_hole circle (at 3.8227 -10.8712) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
-  (pad 4 thru_hole circle (at 6.9977 -10.8712) (size 1.524 1.524) (drill 0.762) (layers *.Cu *.Mask))
-  (model ${KIPRJMOD}/Libraries/3d/TP4056-1A-module.step
-    (offset (xyz 7.05 -11.9 0))
-    (scale (xyz 1 1 1))
-    (rotate (xyz 0 0 -90))
-  )
+(footprint "TP4056-Module"
+	(version 20240108)
+	(generator "pcbnew")
+	(generator_version "8.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0 1.2954 0)
+		(layer "F.SilkS")
+		(uuid "591d0152-ea07-4746-8b0d-83f592a77ccf")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "TP4056-Module"
+		(at 0 -0.5 0)
+		(layer "F.Fab")
+		(uuid "06114812-7b6c-48ed-8653-52912c165aa9")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Footprint" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "8bf41afc-cedd-4a11-8031-9d48c519869b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "9cef0def-bb14-4c75-8f55-fc99f899459c")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "624f06ca-0679-41d7-b653-76296d77d5ef")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -8.5 -14)
+		(end -8.5 14)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "52b92644-711d-4d65-a45d-a6048e6f499b")
+	)
+	(fp_line
+		(start -8.5 14)
+		(end -3.81 14)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "90bc9394-61fa-4071-8ead-db80960be938")
+	)
+	(fp_line
+		(start -3.81 14.9225)
+		(end -3.81 12.5095)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e278d54f-3e6a-4c1a-ba23-64c5aa91b592")
+	)
+	(fp_line
+		(start -3.81 14.9225)
+		(end 3.7465 14.9225)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "5fd56c54-2ef8-49a1-a029-edfb82443736")
+	)
+	(fp_line
+		(start 3.7465 14.9225)
+		(end 3.7465 12.5095)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e07b50a8-9d0a-4f50-9277-7658eec11a52")
+	)
+	(fp_line
+		(start 3.81 14)
+		(end 8.5 14)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "0e38c34e-6263-4064-afce-18dd41518223")
+	)
+	(fp_line
+		(start 8.5 -14)
+		(end -8.5 -14)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "cf915fce-9e9d-4250-b524-667f010aaadb")
+	)
+	(fp_line
+		(start 8.5 14)
+		(end 8.5 -14)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "6fe6564a-fb91-48f4-9f76-c475db0d42ed")
+	)
+	(fp_text user "B+"
+		(at -3.8227 -8.7376 90)
+		(layer "F.SilkS")
+		(uuid "17e0de08-383d-4be5-9fde-64d2ae91f3da")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "Micro USB"
+		(at -0.1905 12.7635 0)
+		(layer "F.SilkS")
+		(uuid "33e4962f-9223-4538-8131-5042de9c3994")
+		(effects
+			(font
+				(size 0.7 0.7)
+				(thickness 0.1)
+			)
+		)
+	)
+	(fp_text user "OUT-"
+		(at 6.9723 -7.8105 90)
+		(layer "F.SilkS")
+		(uuid "4371332d-e81c-4dbf-8dd8-0c66443113ec")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "CHG-"
+		(at 6.2611 10.1981 0)
+		(layer "F.SilkS")
+		(uuid "5893daf9-f6ec-46d9-88f3-a4c7eded3d57")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "Out+"
+		(at -7.0612 -7.9375 90)
+		(layer "F.SilkS")
+		(uuid "5e75da6a-6bcb-42cc-81d4-811298b78536")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "B-"
+		(at 3.7846 -8.7376 90)
+		(layer "F.SilkS")
+		(uuid "7bff1956-e175-4ed3-ad7a-7001c434cbda")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "CHG+"
+		(at -5.7912 10.1981 0)
+		(layer "F.SilkS")
+		(uuid "d18b8ead-036a-426d-8f79-7bf4efc8733e")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at -6.9977 11.8872)
+		(size 2 2)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "0d741e24-b50a-43dd-83af-b8361ea387dd")
+	)
+	(pad "2" thru_hole circle
+		(at 6.9977 11.8872)
+		(size 2 2)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "8d00bb96-f5fc-4a2a-bcc0-bd02ff0b3bc1")
+	)
+	(pad "3" thru_hole circle
+		(at -6.9977 -10.8712)
+		(size 2 2)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "cc275c92-ffba-4679-975c-23c0402eb4a7")
+	)
+	(pad "4" thru_hole circle
+		(at 6.9977 -10.8712)
+		(size 2 2)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "c118252f-fc98-4cb3-841a-c13ac2644c57")
+	)
+	(pad "5" thru_hole circle
+		(at -3.8227 -10.8712)
+		(size 2 2)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "3a3b11e4-7f77-4957-8798-d5286598fcc1")
+	)
+	(pad "6" thru_hole circle
+		(at 3.8227 -10.8712)
+		(size 2 2)
+		(drill 1.24)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f950c5bf-4154-4d6e-ad61-72ad250981e9")
+	)
+	(model "${KIPRJMOD}/../Libraries/3D_models/TP4056-1A-module.step"
+		(offset
+			(xyz 7.05 -11.9 1.8)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 -90)
+		)
+	)
 )
