@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.1,
-          "height": 2.0,
-          "width": 2.0
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -178,8 +178,8 @@
       ],
       "track_widths": [
         0.0,
-        0.25,
         0.5,
+        0.8,
         1.0
       ],
       "tuning_pattern_settings": {
@@ -214,8 +214,8 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.8,
-          "drill": 0.4
+          "diameter": 1.0,
+          "drill": 0.6
         }
       ],
       "zones_allow_external_fillets": false
@@ -450,7 +450,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "Temperature_cluster.kicad_pro",
+    "filename": "Service_CAN_Connector.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -541,7 +541,7 @@
           "show": true
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
           "show": true
@@ -568,14 +568,14 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": true
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Footprint"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -618,16 +618,12 @@
   },
   "sheets": [
     [
-      "c96faf72-0ed2-4ed1-a439-4e57053e11b5",
+      "886ff8b5-8a96-4035-9c80-d77a5a1d1bdd",
       "Root"
     ],
     [
-      "65668258-1380-40f1-8f0c-18d3dfc5e1a1",
-      "Power_module"
-    ],
-    [
-      "6bce3d65-0be4-4e8d-bb75-91c3cf81a4ae",
-      "CAN-Transceiver"
+      "8c6479b9-c7bb-4c74-9a52-4a1cd228220c",
+      "LED_Cluster"
     ]
   ],
   "text_variables": {}

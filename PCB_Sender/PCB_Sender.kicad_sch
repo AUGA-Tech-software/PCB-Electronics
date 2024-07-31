@@ -6896,16 +6896,18 @@
 		)
 		(uuid "7ccfd9f6-731a-4f0a-8cab-ff57665886a1")
 	)
-	(text "It should be charged from 12-24v\n\n1st option: Lemona DC/DC su LM2596S Įėjimas 3-40VDC iki 2A\n\n2nd option: LM7805"
+	(text "REV D requirements:\nPower led is too bright\nAdd Status LED to IO21 pin\nrouting fix, from battery +\nRUN DRC!!!\nLM7805 needs heatsink, more space for it. Add Reverse voltage protection\nMore el. caps for all busses"
 		(exclude_from_sim no)
-		(at 18.034 23.368 0)
+		(at 13.97 21.59 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left)
 		)
-		(uuid "86ea1857-973a-4d10-aa59-e8078bef1834")
+		(uuid "95ec3aa2-db51-476f-9749-e804b4c59e2d")
 	)
 	(text "Adressable RGB LED\n(Optional)"
 		(exclude_from_sim no)
@@ -6957,6 +6959,16 @@
 			(justify left)
 		)
 		(uuid "d78b42a8-ae81-407c-b78b-2efb58e4a363")
+	)
+	(text "Need Heatsink !"
+		(exclude_from_sim no)
+		(at 71.882 39.878 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "da9b9a52-1dd9-4b04-888d-bae656ed1f37")
 	)
 	(text "OTA Sensor Module (Sender)"
 		(exclude_from_sim no)

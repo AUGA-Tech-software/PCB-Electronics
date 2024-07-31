@@ -6,12 +6,114 @@
 	(paper "A4")
 	(title_block
 		(title "CAN-Transceiver")
-		(date "2024-05-28")
+		(date "2024-06-28")
 		(rev "A")
-		(company "AUGA Tech")
-		(comment 1 "Darius Vaitiekus")
+		(company "D. Vaitiekus")
+		(comment 1 "AUGA Tech")
 	)
 	(lib_symbols
+		(symbol "Connector:TestPoint"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.762) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:C_Polarized_Small"
 			(pin_numbers hide)
 			(pin_names
@@ -1613,6 +1715,12 @@
 		)
 	)
 	(junction
+		(at 219.71 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21b45e90-7f9f-4a14-9d89-9757e20523b2")
+	)
+	(junction
 		(at 109.22 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1653,6 +1761,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "baaf4697-08ab-4a2e-be87-0934dddf6ce1")
+	)
+	(junction
+		(at 219.71 43.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bbb819ac-2848-463a-9ace-314ed4e4240e")
 	)
 	(junction
 		(at 127 36.83)
@@ -1784,6 +1898,16 @@
 	)
 	(wire
 		(pts
+			(xy 219.71 43.18) (xy 223.52 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ad1ea57-a178-4885-b436-37e0c79d57dc")
+	)
+	(wire
+		(pts
 			(xy 146.05 34.29) (xy 146.05 36.83)
 		)
 		(stroke
@@ -1864,7 +1988,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 43.18) (xy 223.52 43.18)
+			(xy 210.82 43.18) (xy 219.71 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1891,6 +2015,16 @@
 			(type default)
 		)
 		(uuid "75c1a611-1112-4a95-a079-f345bbafe43b")
+	)
+	(wire
+		(pts
+			(xy 219.71 55.88) (xy 223.52 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75d949fe-5087-40a5-88da-bdbaf5d25aa0")
 	)
 	(wire
 		(pts
@@ -2084,7 +2218,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 55.88) (xy 223.52 55.88)
+			(xy 210.82 55.88) (xy 219.71 55.88)
 		)
 		(stroke
 			(width 0)
@@ -6540,6 +6674,24 @@
 				(hide yes)
 			)
 		)
+		(property "JLCPCB Part #" "C565636"
+			(at 240.03 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Package" "0805"
+			(at 240.03 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "34ec042e-3e02-4a54-9653-88cb9942b500")
 		)
@@ -7100,6 +7252,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 219.71 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "605814b7-cab5-4ae8-bdc9-3f08e31715f4")
+		(property "Reference" "TP6"
+			(at 222.25 38.6079 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CANH"
+			(at 222.25 41.1479 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 224.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 224.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 219.71 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3b1dd86f-6d85-4189-b0c1-6c5e1ad52658")
+		)
+		(instances
+			(project "Temperature_cluster"
+				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5/6bce3d65-0be4-4e8d-bb75-91c3cf81a4ae"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Polarized_Small")
 		(at 114.3 33.02 90)
 		(unit 1)
@@ -7181,6 +7400,73 @@
 			(project "Temperature_cluster"
 				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5/6bce3d65-0be4-4e8d-bb75-91c3cf81a4ae"
 					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 219.71 55.88 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a109e969-4640-48cc-9c1a-0eda71683f61")
+		(property "Reference" "TP7"
+			(at 222.25 57.9119 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "CANL"
+			(at 222.25 60.4519 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 214.63 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 214.63 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 219.71 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5d1a8f9b-ef3d-4ab8-aa81-3d01f8b9c779")
+		)
+		(instances
+			(project "Temperature_cluster"
+				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5/6bce3d65-0be4-4e8d-bb75-91c3cf81a4ae"
+					(reference "TP7")
 					(unit 1)
 				)
 			)

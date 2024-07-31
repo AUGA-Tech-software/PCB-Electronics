@@ -4,6 +4,13 @@
 	(generator_version "8.0")
 	(uuid "f9d78377-18fc-41f8-8429-48d43fcdb9ab")
 	(paper "A4")
+	(title_block
+		(title "Power Module")
+		(date "2024-06-28")
+		(rev "A")
+		(company "D. Vaitiekus")
+		(comment 1 "AUGA Tech")
+	)
 	(lib_symbols
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
@@ -4332,6 +4339,16 @@
 		)
 		(uuid "c513558b-5221-4780-83d4-3e20b3c91439")
 	)
+	(text "Input range\n14V-36V"
+		(exclude_from_sim no)
+		(at 37.592 40.386 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "dda9fe81-cbb6-4313-b341-39c4b49d8b55")
+	)
 	(label "BOOT"
 		(at 110.49 92.71 0)
 		(fields_autoplaced yes)
@@ -6551,7 +6568,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2404260921_cjiang--Changjiang-Microelectronics-Tech-FXL0630-150-M_C177243.pdf"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1810201249_Murata-Electronics-LQM31PN2R2M00L_C171763.pdf"
 			(at 158.75 30.48 0)
 			(effects
 				(font
@@ -6560,7 +6577,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "3A 15uH Molding Choke ±20% 4.5A SMD,6.6x7mm Power Inductors ROHS "
+		(property "Description" "900mA 2.2uH ±20% 237.5mΩ 1206 Inductors (SMD) ROHS "
 			(at 158.75 30.48 0)
 			(effects
 				(font
@@ -6569,7 +6586,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C216156"
+		(property "JLCPCB Part #" "C171763"
 			(at 158.75 30.48 0)
 			(effects
 				(font
@@ -6578,7 +6595,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "L0805"
+		(property "Package" "1206"
 			(at 158.75 30.48 0)
 			(effects
 				(font
@@ -8301,6 +8318,73 @@
 			(project "Temperature_cluster"
 				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5/65668258-1380-40f1-8f0c-18d3dfc5e1a1"
 					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 227.33 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e75ce8de-fe91-4ef5-a2d0-6cde38388857")
+		(property "Reference" "TP5"
+			(at 229.87 100.8379 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3v3"
+			(at 229.87 103.3779 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.0mm_Drill0.5mm"
+			(at 232.41 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 232.41 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 227.33 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "70aaad3d-7a9c-4135-8a03-12c8bf701dcb")
+		)
+		(instances
+			(project "Temperature_cluster"
+				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5/65668258-1380-40f1-8f0c-18d3dfc5e1a1"
+					(reference "TP5")
 					(unit 1)
 				)
 			)

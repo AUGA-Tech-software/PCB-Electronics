@@ -485,8 +485,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
-      "pos_files": "",
+      "plot": "prod_HV_BAT_COM_REVA/",
+      "pos_files": "prod_HV_BAT_COM_REVA/",
       "specctra_dsn": "",
       "step": "HV_BAT_COM_Distribution_Board.step",
       "svg": "",
@@ -526,7 +526,7 @@
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": true
+          "show": false
         },
         {
           "group_by": false,
@@ -562,18 +562,6 @@
           "group_by": false,
           "label": "MPN",
           "name": "MPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Device",
-          "name": "Sim.Device",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Sim.Pins",
-          "name": "Sim.Pins",
           "show": false
         },
         {
