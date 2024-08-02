@@ -7,7 +7,7 @@
 	(title_block
 		(title "Power Module")
 		(date "2024-06-28")
-		(rev "A")
+		(rev "B")
 		(company "D. Vaitiekus")
 		(comment 1 "AUGA Tech")
 	)
@@ -4339,7 +4339,7 @@
 		)
 		(uuid "c513558b-5221-4780-83d4-3e20b3c91439")
 	)
-	(text "Input range\n14V-36V"
+	(text "Input range\n14V-32V"
 		(exclude_from_sim no)
 		(at 37.592 40.386 0)
 		(effects
@@ -6964,7 +6964,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10v, 220uF"
+		(property "Value" "50v, 220uF"
 			(at 131.064 47.498 90)
 			(effects
 				(font
@@ -6973,7 +6973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
 			(at 128.27 41.91 0)
 			(effects
 				(font
@@ -6982,7 +6982,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Rubycon-50TLV220MSPA10X10-5_C365680.pdf"
 			(at 128.27 41.91 0)
 			(effects
 				(font
@@ -6991,7 +6991,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor, small symbol"
+		(property "Description" "220uF 50V ±20% SMD,D10xL10.5mm  Aluminum Electrolytic Capacitors - SMD ROHS"
 			(at 128.27 41.91 0)
 			(effects
 				(font
@@ -7000,7 +7000,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C72494"
+		(property "JLCPCB Part #" "C365680"
 			(at 128.27 41.91 0)
 			(effects
 				(font
@@ -7009,7 +7009,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "SMD,D6.3xL5.4mm"
+		(property "Package" "SMD,D10xL10.5mm"
 			(at 128.27 41.91 0)
 			(effects
 				(font
@@ -7530,7 +7530,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10v, 220uF"
+		(property "Value" "50v, 220uF"
 			(at 171.704 47.498 90)
 			(effects
 				(font
@@ -7539,7 +7539,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_6.3x5.4"
+		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10.5"
 			(at 168.91 41.91 0)
 			(effects
 				(font
@@ -7548,7 +7548,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/1912111437_Rubycon-50TLV220MSPA10X10-5_C365680.pdf"
 			(at 168.91 41.91 0)
 			(effects
 				(font
@@ -7557,7 +7557,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Polarized capacitor, small symbol"
+		(property "Description" "220uF 50V ±20% SMD,D10xL10.5mm  Aluminum Electrolytic Capacitors - SMD ROHS"
 			(at 168.91 41.91 0)
 			(effects
 				(font
@@ -7566,7 +7566,7 @@
 				(hide yes)
 			)
 		)
-		(property "JLCPCB Part #" "C72494"
+		(property "JLCPCB Part #" "C365680"
 			(at 168.91 41.91 0)
 			(effects
 				(font
@@ -7575,7 +7575,7 @@
 				(hide yes)
 			)
 		)
-		(property "Package" "SMD,D6.3xL5.4mm"
+		(property "Package" "SMD,D10xL10.5mm"
 			(at 168.91 41.91 0)
 			(effects
 				(font

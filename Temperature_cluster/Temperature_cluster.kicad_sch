@@ -7,7 +7,7 @@
 	(title_block
 		(title "Temp Cluster")
 		(date "2024-06-28")
-		(rev "A")
+		(rev "B")
 		(company "D. Vaitiekus")
 		(comment 1 "AUGA Tech")
 	)
@@ -1426,6 +1426,174 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "Connector_Generic:Conn_01x03"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x03_1_1"
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4918,18 +5086,6 @@
 		(uuid "031aa0cf-e9b7-4301-9e5b-599f422383f2")
 	)
 	(junction
-		(at 250.19 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "05927295-c286-4464-ac57-99fbc9a8ca96")
-	)
-	(junction
-		(at 234.95 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0b148f65-26d8-4389-8cfa-321a9df6d95a")
-	)
-	(junction
 		(at 279.4 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5032,12 +5188,6 @@
 		(uuid "6ce7c2de-4668-4ed2-a637-c0d04594b0da")
 	)
 	(junction
-		(at 259.08 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6d83e3b4-32cb-4f47-853f-043717697c1e")
-	)
-	(junction
 		(at 279.4 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5078,12 +5228,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a0faf8e3-046b-4821-9731-69325b0a8fc6")
-	)
-	(junction
-		(at 242.57 25.4)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a2af22db-0c7a-4f3d-a22e-0396b0597eac")
 	)
 	(junction
 		(at 227.33 25.4)
@@ -5158,8 +5302,24 @@
 		(uuid "ff562789-c1a3-4441-b7c6-523dca3487f2")
 	)
 	(no_connect
+		(at 245.11 119.38)
+		(uuid "0d67fda2-809c-4689-9269-cd5dfa0515b7")
+	)
+	(no_connect
+		(at 198.12 77.47)
+		(uuid "30d5ea78-1d4d-4f02-afb1-5af9bdfb05f9")
+	)
+	(no_connect
+		(at 198.12 119.38)
+		(uuid "5aae622d-ce44-4fa3-b7dd-756585a9d321")
+	)
+	(no_connect
 		(at 162.56 179.07)
 		(uuid "69874243-6eba-4eaa-9cda-d49c2133a354")
+	)
+	(no_connect
+		(at 245.11 77.47)
+		(uuid "71fa9d5d-61db-4b86-82f0-179be879bb9a")
 	)
 	(wire
 		(pts
@@ -5363,23 +5523,13 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 60.96) (xy 132.08 60.96)
+			(xy 143.51 60.96) (xy 134.62 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "16aefb36-a5b6-4f84-a944-c6f0a7421ecb")
-	)
-	(wire
-		(pts
-			(xy 267.97 31.75) (xy 267.97 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1712a47a-215b-482a-bdd7-d6b5e29851ba")
 	)
 	(wire
 		(pts
@@ -5503,16 +5653,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 31.75) (xy 242.57 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21e8ecc1-cee3-42ac-a845-040584aa2911")
-	)
-	(wire
-		(pts
 			(xy 279.4 121.92) (xy 279.4 125.73)
 		)
 		(stroke
@@ -5623,16 +5763,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 25.4) (xy 242.57 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2eda70d2-6b3e-4b42-abce-3d0e3ba18029")
-	)
-	(wire
-		(pts
 			(xy 111.76 81.28) (xy 120.65 81.28)
 		)
 		(stroke
@@ -5663,7 +5793,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 60.96) (xy 123.19 60.96)
+			(xy 111.76 60.96) (xy 120.65 60.96)
 		)
 		(stroke
 			(width 0)
@@ -5730,6 +5860,16 @@
 			(type default)
 		)
 		(uuid "38300f66-ea3f-48d7-861c-0ff437b65c0d")
+	)
+	(wire
+		(pts
+			(xy 130.81 182.88) (xy 139.7 182.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3832d6e6-0b48-48d6-8b3e-706bc1bb855b")
 	)
 	(wire
 		(pts
@@ -5830,6 +5970,16 @@
 			(type default)
 		)
 		(uuid "409a481b-55c8-4533-ad52-dd1c1d63a30d")
+	)
+	(wire
+		(pts
+			(xy 134.62 180.34) (xy 130.81 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40a25694-275f-4ff3-9d86-6568493c3615")
 	)
 	(wire
 		(pts
@@ -5980,16 +6130,6 @@
 			(type default)
 		)
 		(uuid "4a7b3ede-c75f-4dd7-9136-415ffedc07cb")
-	)
-	(wire
-		(pts
-			(xy 259.08 25.4) (xy 259.08 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b3f6f16-5937-4e88-acf9-acda8623b2bc")
 	)
 	(wire
 		(pts
@@ -6183,16 +6323,6 @@
 	)
 	(wire
 		(pts
-			(xy 267.97 25.4) (xy 259.08 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6081df91-c5c5-4a58-969f-fcad30b46249")
-	)
-	(wire
-		(pts
 			(xy 279.4 102.87) (xy 279.4 106.68)
 		)
 		(stroke
@@ -6220,6 +6350,16 @@
 			(type default)
 		)
 		(uuid "62a37160-076f-4081-ba05-2409b4b29b93")
+	)
+	(wire
+		(pts
+			(xy 134.62 179.07) (xy 134.62 180.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "633ffe0b-2a5c-4fd2-86f0-24afb6b2479a")
 	)
 	(wire
 		(pts
@@ -6503,16 +6643,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 26.67) (xy 242.57 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7a71b918-a984-4b62-8dba-f581992945f1")
-	)
-	(wire
-		(pts
 			(xy 111.76 66.04) (xy 120.65 66.04)
 		)
 		(stroke
@@ -6550,16 +6680,6 @@
 			(type default)
 		)
 		(uuid "803e322e-07e7-4bc0-a028-6d4251ddf62d")
-	)
-	(wire
-		(pts
-			(xy 267.97 26.67) (xy 267.97 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "810ea868-946f-4f7b-b4b8-510ff1d59cb1")
 	)
 	(wire
 		(pts
@@ -6673,6 +6793,16 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 189.23) (xy 137.16 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "899cf098-dbda-4b75-a4eb-18c0708f3c77")
+	)
+	(wire
+		(pts
 			(xy 138.43 179.07) (xy 147.32 179.07)
 		)
 		(stroke
@@ -6730,6 +6860,16 @@
 			(type default)
 		)
 		(uuid "8cb607fc-9dac-4b0f-9c51-3d6075393ad8")
+	)
+	(wire
+		(pts
+			(xy 137.16 185.42) (xy 130.81 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d89b919-c155-4431-8c1a-eac79a669ca7")
 	)
 	(wire
 		(pts
@@ -6913,16 +7053,6 @@
 	)
 	(wire
 		(pts
-			(xy 242.57 25.4) (xy 234.95 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bd227c3-8402-4cf4-9a9a-15ec65945f10")
-	)
-	(wire
-		(pts
 			(xy 53.34 151.13) (xy 53.34 160.02)
 		)
 		(stroke
@@ -7080,16 +7210,6 @@
 			(type default)
 		)
 		(uuid "ad002843-6dc8-4e54-8c8c-8a718258459e")
-	)
-	(wire
-		(pts
-			(xy 250.19 26.67) (xy 250.19 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad1b41c6-38ff-4a05-af5c-0592e7ff19ec")
 	)
 	(wire
 		(pts
@@ -7463,16 +7583,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 31.75) (xy 250.19 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d8cc8b6e-d03d-40ef-bbbe-3e1e2a737110")
-	)
-	(wire
-		(pts
 			(xy 111.76 58.42) (xy 128.27 58.42)
 		)
 		(stroke
@@ -7540,16 +7650,6 @@
 			(type default)
 		)
 		(uuid "e3c63811-8d95-4766-a684-1789bf63ce9f")
-	)
-	(wire
-		(pts
-			(xy 259.08 25.4) (xy 250.19 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4798fd2-2fc4-4d1b-a151-27b9eb3a8a8a")
 	)
 	(wire
 		(pts
@@ -7700,16 +7800,6 @@
 			(type default)
 		)
 		(uuid "ec7c9dd5-76b6-43d7-9318-398cb8491c3d")
-	)
-	(wire
-		(pts
-			(xy 259.08 31.75) (xy 259.08 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ecb10e24-25ac-4769-8a53-6fec80dbe138")
 	)
 	(wire
 		(pts
@@ -8296,7 +8386,7 @@
 	)
 	(text "i2C Pull-ups"
 		(exclude_from_sim no)
-		(at 242.062 23.622 0)
+		(at 237.744 22.86 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8335,7 +8425,7 @@
 		)
 		(uuid "6bf1c5f3-8c56-414a-9bcd-d4ea7ef6ae4a")
 	)
-	(text "Input range: 14-36V\n"
+	(text "Input range: 14-32V"
 		(exclude_from_sim no)
 		(at 27.178 107.696 0)
 		(effects
@@ -8355,17 +8445,6 @@
 			(justify right)
 		)
 		(uuid "80772dd9-36e6-4181-a117-d53669dae431")
-	)
-	(text "You should only use GPIO-12 as an output pin. \nOr at least it should never be pulled up or down by something external. \nThe state of this pin will determine the flash voltage. \nIf you have a board which needs the lower voltage of both options, you will fry the chip. \nFor the other option, it will just \"not work\""
-		(exclude_from_sim no)
-		(at 163.068 34.29 0)
-		(effects
-			(font
-				(size 0.762 0.762)
-			)
-			(justify left)
-		)
-		(uuid "94112880-ad0f-493f-8304-6656c145393c")
 	)
 	(text "+3.3VP is from ESP32 onboard 3v3 regulator"
 		(exclude_from_sim no)
@@ -8420,7 +8499,7 @@
 		)
 		(uuid "d64291f1-933f-4996-8899-ff696e3747e8")
 	)
-	(text "36V -> 3.6V\n14V -> 1.4V\n12V -> 1.2V\n10V -> 1.0V"
+	(text "32V -> 3.2V\n14V -> 1.4V\n12V -> 1.2V\n10V -> 1.0V"
 		(exclude_from_sim no)
 		(at 49.276 122.682 0)
 		(effects
@@ -8550,17 +8629,6 @@
 		)
 		(uuid "131eab3c-1e07-4f5a-9cad-a88460d590c0")
 	)
-	(label "ADC1-RDY"
-		(at 123.19 60.96 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "1472632e-182e-405a-b178-d9420d7b9b78")
-	)
 	(label "IO18"
 		(at 31.75 71.12 180)
 		(fields_autoplaced yes)
@@ -8593,6 +8661,17 @@
 			(justify left bottom)
 		)
 		(uuid "1a8648c6-e2f4-43e7-9efb-2b6b7a783385")
+	)
+	(label "IO12"
+		(at 120.65 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1a8bf484-61f3-4dc7-887f-e4aad80e2bcf")
 	)
 	(label "IO14"
 		(at 120.65 63.5 180)
@@ -8979,17 +9058,6 @@
 		)
 		(uuid "5fd9b96b-3e53-4429-917b-85a5934fa10c")
 	)
-	(label "ADC4-RDY"
-		(at 267.97 41.91 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "639f364e-adf9-4ba9-82b7-e06b23e993d1")
-	)
 	(label "NTC_1"
 		(at 261.62 80.01 0)
 		(fields_autoplaced yes)
@@ -9133,17 +9201,6 @@
 		)
 		(uuid "7060191c-fdda-49ef-bfe0-827d6f1b0bfd")
 	)
-	(label "ADC3-RDY"
-		(at 259.08 41.91 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "72988e2a-9cbb-4baf-aa60-536a8bff7a96")
-	)
 	(label "CMD"
 		(at 134.62 48.26 0)
 		(fields_autoplaced yes)
@@ -9232,17 +9289,6 @@
 		)
 		(uuid "84f9cb80-7db4-4cfd-b12e-7f7aa2774dd1")
 	)
-	(label "ADC1-RDY"
-		(at 242.57 41.91 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8567ab46-0b82-4766-858d-8db49d06d710")
-	)
 	(label "i2c_SCL"
 		(at 245.11 82.55 180)
 		(fields_autoplaced yes)
@@ -9297,6 +9343,17 @@
 			(justify right bottom)
 		)
 		(uuid "95e10dc9-a763-4b43-974d-c2f22bcec00a")
+	)
+	(label "IO12"
+		(at 134.62 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9661d178-b76e-4b30-9414-a4c3ef98c8d9")
 	)
 	(label "IO23"
 		(at 48.26 88.9 0)
@@ -9551,6 +9608,17 @@
 		)
 		(uuid "b800a15a-b964-4e9e-aba5-9587185ad57b")
 	)
+	(label "WS_LED"
+		(at 139.7 182.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "b84c8765-3ef6-4be5-b207-6389303be210")
+	)
 	(label "IO35"
 		(at 120.65 78.74 180)
 		(fields_autoplaced yes)
@@ -9561,17 +9629,6 @@
 			(justify right bottom)
 		)
 		(uuid "bae3e514-3648-433a-9c2b-f4607b2a582c")
-	)
-	(label "ADC2-RDY"
-		(at 250.19 41.91 90)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc2d6704-0a97-4492-b496-a0e7e49019ef")
 	)
 	(label "NTC_4"
 		(at 261.62 91.44 0)
@@ -9792,17 +9849,6 @@
 			(justify right bottom)
 		)
 		(uuid "d569e5b4-1843-4db4-a892-74a32037a0ab")
-	)
-	(label "ADC1-RDY"
-		(at 132.08 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d605a328-d401-4ab0-bca5-964b35ff3ec6")
 	)
 	(label "NTC_15"
 		(at 261.62 133.35 0)
@@ -11084,93 +11130,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small")
-		(at 259.08 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1f437467-8ff6-4032-8fa2-a7814b9e16c7")
-		(property "Reference" "R5"
-			(at 260.096 28.194 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 260.096 30.226 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 259.08 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010030_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf"
-			(at 259.08 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/℃ ±1% 5.1kΩ 0805 Chip Resistor - Surface Mount ROHS "
-			(at 259.08 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" "C27834"
-			(at 259.08 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "0805"
-			(at 259.08 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "76693452-4732-4050-98d5-2283c57033ab")
-		)
-		(pin "1"
-			(uuid "4896d135-889d-4dc3-9013-95c573afc9d3")
-		)
-		(instances
-			(project "Temperature_cluster"
-				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x19")
 		(at 59.69 68.58 0)
 		(unit 1)
@@ -11452,6 +11411,77 @@
 			(project "Temperature_cluster"
 				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
 					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 125.73 182.88 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "27ca8a09-1730-4a25-a47c-309a2ae32e53")
+		(property "Reference" "J10"
+			(at 125.73 178.054 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Ext RGB connector"
+			(at 125.476 188.214 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical"
+			(at 125.73 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 125.73 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 125.73 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "f5ac595a-4875-4eee-9a76-b21174b77b25")
+		)
+		(pin "2"
+			(uuid "36e7e7cc-8962-4936-bac9-d2d163a7ff6a")
+		)
+		(pin "1"
+			(uuid "f328bee2-7b2b-4a77-8d44-4a50bc24ea1c")
+		)
+		(instances
+			(project "Temperature_cluster"
+				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
+					(reference "J10")
 					(unit 1)
 				)
 			)
@@ -14256,6 +14286,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 137.16 189.23 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "838c91a4-1fd1-4895-88fb-5651d7531d2f")
+		(property "Reference" "#PWR055"
+			(at 137.16 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.16 194.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2567d575-55e5-4976-aafd-f8ec1f593aae")
+		)
+		(instances
+			(project "Temperature_cluster"
+				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small")
 		(at 273.05 137.16 90)
 		(unit 1)
@@ -14404,93 +14500,6 @@
 			(project "Temperature_cluster"
 				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
 					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 250.19 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8581fe9e-2b9e-489c-9f18-801b61c9db02")
-		(property "Reference" "R4"
-			(at 251.206 28.194 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 251.206 30.226 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 250.19 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010030_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf"
-			(at 250.19 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/℃ ±1% 5.1kΩ 0805 Chip Resistor - Surface Mount ROHS "
-			(at 250.19 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" "C27834"
-			(at 250.19 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "0805"
-			(at 250.19 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "658e1f65-156a-4731-a1f7-4cc8103d14e8")
-		)
-		(pin "1"
-			(uuid "795bfc6e-fada-4ffc-8337-82b40ce72228")
-		)
-		(instances
-			(project "Temperature_cluster"
-				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
-					(reference "R4")
 					(unit 1)
 				)
 			)
@@ -14733,93 +14742,6 @@
 			(project "Temperature_cluster"
 				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
 					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 242.57 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9a0b5a6b-2560-4982-b61d-fd158d7d81d8")
-		(property "Reference" "R3"
-			(at 243.586 28.194 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 243.586 30.226 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 242.57 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010030_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf"
-			(at 242.57 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/℃ ±1% 5.1kΩ 0805 Chip Resistor - Surface Mount ROHS "
-			(at 242.57 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" "C27834"
-			(at 242.57 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "0805"
-			(at 242.57 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "44e13c53-cf3a-47a4-be86-2fa67ca387b3")
-		)
-		(pin "1"
-			(uuid "12c4a2a8-9d52-42af-82f0-2101d03a0f74")
-		)
-		(instances
-			(project "Temperature_cluster"
-				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
-					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -15381,6 +15303,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+5V")
+		(at 134.62 179.07 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "aa1bed83-ff29-4491-8deb-dee7763622d7")
+		(property "Reference" "#PWR054"
+			(at 134.62 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+5V"
+			(at 134.62 175.514 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 134.62 179.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1f56d82-53bc-4e6e-a32c-274a0ab3bac8")
+		)
+		(instances
+			(project "Temperature_cluster"
+				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 128.27 62.23 0)
 		(unit 1)
@@ -15446,93 +15433,6 @@
 			(project "Temperature_cluster"
 				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 267.97 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "aed4fb8d-39d2-46d5-8017-13200577edf8")
-		(property "Reference" "R6"
-			(at 268.986 28.194 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5.1k"
-			(at 268.986 30.226 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 267.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2206010030_UNI-ROYAL-Uniroyal-Elec-0805W8F5101T5E_C27834.pdf"
-			(at 267.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "125mW Thick Film Resistors 150V ±100ppm/℃ ±1% 5.1kΩ 0805 Chip Resistor - Surface Mount ROHS "
-			(at 267.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "JLCPCB Part #" "C27834"
-			(at 267.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Package" "0805"
-			(at 267.97 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "0db0823f-130d-4aea-b976-0f90f510d0c9")
-		)
-		(pin "1"
-			(uuid "e2a194a3-bf44-4a61-bd7e-2f40e5c22d0c")
-		)
-		(instances
-			(project "Temperature_cluster"
-				(path "/c96faf72-0ed2-4ed1-a439-4e57053e11b5"
-					(reference "R6")
 					(unit 1)
 				)
 			)
