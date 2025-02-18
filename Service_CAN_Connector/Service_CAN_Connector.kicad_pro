@@ -488,7 +488,7 @@
       "plot": "prod/",
       "pos_files": "prod/",
       "specctra_dsn": "",
-      "step": "",
+      "step": "Service_CAN_Connector.step",
       "svg": "",
       "vrml": ""
     },
